@@ -1,0 +1,78 @@
+/* BACKGROUND */
+.bg-myPrimary {
+  background-color: rgb(173, 243, 255);
+}
+.bg-mySecondary {
+  background-color: #79ebff;
+}
+.bg-black-tranparent {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* FONT */
+@font-face {
+  font-family: "Acme";
+  src: url("../font/Acme-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Acme", sans-serif;
+}
+/* BORDER */
+.text-border-light {
+  text-shadow: 2px 2px 0px rgb(255, 255, 255), -2px -2px 0px rgb(255, 255, 255), 2px -2px 0px rgb(255, 255, 255), -2px 2px 0px rgb(255, 255, 255);
+}
+/* SHADOW */
+.text-shadow-dark {
+  text-shadow: 1px 0px 0px rgb(70, 138, 150);
+}
+.text-shadow-light {
+  text-shadow: 1px 0px 0px rgb(255, 255, 255);
+}
+.text-shadow-light-md {
+  text-shadow: 5px 0px 0px rgb(255, 255, 255);
+}
+.box-shadow-primary {
+  box-shadow: 0 1px 10px 10px rgb(173, 243, 255);
+}
+.box-shadow-top-primary {
+  box-shadow: 0 -1px 10px 10px rgb(173, 243, 255);
+}
+.image-shadow {
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 1));
+}
+/* CAROUSEL */
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
