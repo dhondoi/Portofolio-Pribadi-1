@@ -8,6 +8,9 @@
 .bg-black-tranparent {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.bg-dark-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 /* FONT */
 @font-face {
   font-family: "Acme";

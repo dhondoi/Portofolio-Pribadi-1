@@ -1,69 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>My Portofolio</title>
-        <!-- Bootstrap core CSS -->
-        <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./assets/css/main.css" rel="stylesheet" />
-    </head>
-    <body>
-        <nav class="navbar sticky-top navbar-light navbar-expand-lg bg-myPrimary text-shadow-light box-shadow-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-5" href="#">My Portofolio</a>
-                <button
-                    class="navbar-toggler border border-1 border-white"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link fs-5" href="#home">Home</a>
-                        <!--<a class="nav-link fs-5" href="#biodata">Biodata</a>-->
-                        <a class="nav-link fs-5" href="#pendidikan">Pendidikan</a>
-                        <a class="nav-link fs-5" href="#pengalaman">Pengalaman</a>
-                        <!--<a class="nav-link fs-5" href="#hobby">Hobby</a>-->
-                        <a class="nav-link fs-5" href="#programming">Skill</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
 
-        <nav class="navbar fixed-bottom box-shadow-top-primary p-1 bg-myPrimary" style="height: 5%"></nav>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portofolio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
+</head>
 
-        <div class="min-vh-100" id="home">
-            <div class="container-fluid p-1 p-sm-5">
-                <div class="row p-5">
-                    <div class="col-12 col-sm-4 pb-3 pb-md-0 text-center">
-                        <img src="./assets/img/foto.jpg" class="w-50 rounded-circle img-thumbnail" />
-                    </div>
-                    <div class="col-12 col-sm-8 text-center text-sm-start align-self-md-center">
-                        <div class="display-5 mb-3">
-                            Doni Firmansyah
-                        </div>
-                        <div class="row row-cols-auto justify-content-between align-items-center">
-                            <div class="col mb-2"><a href="https://www.youtube.com/@dielci33" target="_blank" class="btn btn-outline-danger" role="button"><i class="bi bi-youtube"></i><span>YouTube</span></a></div>
-                            <div class="col mb-2"><a href="https://www.linkedin.com/in/doni-firmansyah-bba977217/" target="_blank" class="btn btn-outline-info" role="button"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a></div>
-                            <div class="col mb-2"><a href="https://www.instagram.com/dhondoii" target="_blank" class="btn btn-outline-danger" style="color: #FF66B2;text-decoration-color:#FF66B2;" role="button"><i class="bi bi-instagram"></i><span>Instagram</span></a></div>
-                            <div class="col mb-2"><a href="https://github.com/dhondoi" target="_blank" class="btn btn-outline-dark" role="button"><i class="bi bi-github"></i><span>Github</span></a></div>
-                            <div class="col mb-2"><a href="https://www.sololearn.com/profile/997006" target="_blank" class="btn btn-outline-primary" role="button"><i class="bi bi-github"></i><span>SoloLearn</span></a></div>
-                        </div>
-                    </div>
+<body>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg bg-myPrimary text-shadow-light box-shadow-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-5" href="#">My Portofolio</a>
+            <button class="navbar-toggler border border-1 border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link fs-5" href="#home">Home</a>
+                    <a class="nav-link fs-5" href="#project">Project</a>
+                    <a class="nav-link fs-5" href="#pendidikan">Pendidikan</a>
+                    <a class="nav-link fs-5" href="#pengalaman">Pengalaman</a>
+                    <!--<a class="nav-link fs-5" href="#hobby">Hobby</a>-->
+                    <a class="nav-link fs-5" href="#programming">Skill</a>
                 </div>
-            </div>
-            <div class="container-fluid position-absolute bottom-0 mb-5">
-                <lottie-player class="image-shadow" src="./assets/img/swipe-up.json" background="transparent" speed="1" style="height: 10vh" loop autoplay></lottie-player>
             </div>
         </div>
+    </nav>
 
-        <!-- <div class="bg-mySecondary" id="biodata">
+    <nav class="navbar fixed-bottom box-shadow-top-primary p-1 bg-myPrimary" style="height: 5%"></nav>
+
+    <div class="min-vh-100" id="home">
+        <div class="container-fluid p-1 p-sm-5">
+            <div class="row p-5">
+                <div class="col-12 col-sm-4 pb-3 pb-md-0 text-center">
+                    <img src="./assets/img/foto.jpg" class="w-50 rounded-circle img-thumbnail" />
+                </div>
+                <div class="col-12 col-sm-8 text-center text-sm-start align-self-md-center">
+                    <div class="display-5 mb-3">
+                        Doni Firmansyah
+                    </div>
+                    <div class="row row-cols-auto justify-content-between align-items-center">
+                        <div class="col mb-2"><a href="https://www.youtube.com/@dielci33" target="_blank"
+                                class="btn btn-outline-danger" role="button"><i
+                                    class="bi bi-youtube"></i><span>YouTube</span></a></div>
+                        <div class="col mb-2"><a href="https://www.linkedin.com/in/doni-firmansyah-bba977217/"
+                                target="_blank" class="btn btn-outline-info" role="button"><i
+                                    class="bi bi-linkedin"></i><span>LinkedIn</span></a></div>
+                        <div class="col mb-2"><a href="https://www.instagram.com/dhondoii" target="_blank"
+                                class="btn btn-outline-danger" style="color: #FF66B2;text-decoration-color:#FF66B2;"
+                                role="button"><i class="bi bi-instagram"></i><span>Instagram</span></a></div>
+                        <div class="col mb-2"><a href="https://github.com/dhondoi" target="_blank"
+                                class="btn btn-outline-dark" role="button"><i
+                                    class="bi bi-github"></i><span>Github</span></a></div>
+                        <div class="col mb-2"><a href="https://www.sololearn.com/profile/997006" target="_blank"
+                                class="btn btn-outline-primary" role="button"><i
+                                    class="bi bi-github"></i><span>SoloLearn</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid position-absolute bottom-0 mb-5">
+            <lottie-player class="image-shadow" src="./assets/img/swipe-up.json" background="transparent" speed="1"
+                style="height: 10vh" loop autoplay></lottie-player>
+        </div>
+    </div>
+
+    <!-- project-section -->
+    <div class="bg-mySecondary" id="project">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,320L0,128L36.9,128L36.9,192L73.8,192L73.8,128L110.8,128L110.8,224L147.7,224L147.7,160L184.6,160L184.6,32L221.5,32L221.5,192L258.5,192L258.5,288L295.4,288L295.4,64L332.3,64L332.3,64L369.2,64L369.2,160L406.2,160L406.2,128L443.1,128L443.1,160L480,160L480,320L516.9,320L516.9,192L553.8,192L553.8,96L590.8,96L590.8,256L627.7,256L627.7,32L664.6,32L664.6,288L701.5,288L701.5,128L738.5,128L738.5,192L775.4,192L775.4,32L812.3,32L812.3,32L849.2,32L849.2,96L886.2,96L886.2,288L923.1,288L923.1,256L960,256L960,96L996.9,96L996.9,288L1033.8,288L1033.8,32L1070.8,32L1070.8,128L1107.7,128L1107.7,288L1144.6,288L1144.6,32L1181.5,32L1181.5,192L1218.5,192L1218.5,288L1255.4,288L1255.4,32L1292.3,32L1292.3,64L1329.2,64L1329.2,64L1366.2,64L1366.2,32L1403.1,32L1403.1,192L1440,192L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z">
+            </path>
+        </svg>
+        <div class="text-shadow-light-md text-center fw-bold display-1 text-black mb-5">PROJECT</div>
+        <div class="swiper mySwiper mb-5">
+            <div class="swiper-wrapper w-50">
+                <!-- @foreach ($bestProducts as $bestProduct) -->
+                <div class="swiper-slide">
+                    <h1 class="position-absolute bg-dark-50 text-white opacity-0 p-3"
+                        style="transform: translateY(-50px)"><a class="text-decoration-none text-white"
+                            href="https://github.com/dhondoi/Aplikasi-Nona-Seblak-Berbasis-Android">Aplikasi Nona
+                            Seblak</a>
+                    </h1>
+                    <img src="./assets/img/nona_seblak.jpg" class="h-25 w-100" />
+                </div>
+                <!-- @endforeach -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,96L0,64L36.9,64L36.9,288L73.8,288L73.8,64L110.8,64L110.8,224L147.7,224L147.7,96L184.6,96L184.6,32L221.5,32L221.5,96L258.5,96L258.5,32L295.4,32L295.4,288L332.3,288L332.3,256L369.2,256L369.2,32L406.2,32L406.2,64L443.1,64L443.1,192L480,192L480,256L516.9,256L516.9,128L553.8,128L553.8,256L590.8,256L590.8,96L627.7,96L627.7,96L664.6,96L664.6,256L701.5,256L701.5,0L738.5,0L738.5,32L775.4,32L775.4,192L812.3,192L812.3,64L849.2,64L849.2,192L886.2,192L886.2,32L923.1,32L923.1,192L960,192L960,160L996.9,160L996.9,160L1033.8,160L1033.8,128L1070.8,128L1070.8,256L1107.7,256L1107.7,32L1144.6,32L1144.6,288L1181.5,288L1181.5,192L1218.5,192L1218.5,256L1255.4,256L1255.4,96L1292.3,96L1292.3,32L1329.2,32L1329.2,96L1366.2,96L1366.2,96L1403.1,96L1403.1,64L1440,64L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                stopOnlastSlide: false
+            },
+            loop: true,
+            loopedSlides: null,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        // swiper.slideTo(swiper.slides.length / 2);
+        // swiper.el.querySelector(".swiper-slide-active").querySelector("h1").style.transition = "1s";
+        // swiper.el.querySelector(".swiper-slide-active").querySelector("h1").classList.remove("opacity-0");
+        // swiper.el.querySelector(".swiper-slide-active").querySelector("h1").style.transform = "translateY(0)";
+
+        swiper.on('transitionEnd', doAnimate);
+        // swiper.on('slideResetTransitionEnd', function(e) {
+        // console.log("slideResetTransitionEnd");
+        // e.visibleSlides.forEach(function(params) {
+        //     params.querySelector("h1").style.transition = "1s";
+        //     if (params.classList.contains("swiper-slide-next")) {
+        //         params.querySelector("h1").classList.remove("opacity-0");
+        //         params.querySelector("h1").style.transform = "translateY(0)";
+        //     } else {
+        //         params.querySelector("h1").classList.add("opacity-0");
+        //         params.querySelector("h1").style.transform = "translateY(-50px)";
+        //     }
+        // });
+        // });
+
+        function doAnimate(e) {
+            e.visibleSlides.forEach(function (params) {
+                params.querySelector("h1").style.transition = "1s";
+                if (params.classList.contains("swiper-slide-active")) {
+                    params.querySelector("h1").classList.remove("opacity-0");
+                    params.querySelector("h1").style.transform = "translateY(0)";
+                } else {
+                    params.querySelector("h1").classList.add("opacity-0");
+                    params.querySelector("h1").style.transform = "translateY(-50px)";
+                }
+            });
+            // if (e.swipeDirection == "next") {
+            //     e.visibleSlides.forEach(function(params) {
+            //         params.querySelector("h1").style.transition = "1s";
+            //         if (params.classList.contains("swiper-slide-active")) {
+            //             params.querySelector("h1").classList.remove("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(0)";
+            //         } else {
+            //             params.querySelector("h1").classList.add("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(-50px)";
+            //         }
+            //     });
+            // } else if (e.swipeDirection == "prev") {
+            //     e.visibleSlides.forEach(function(params) {
+            //         params.querySelector("h1").style.transition = "1s";
+            //         if (params.classList.contains("swiper-slide-prev")) {
+            //             params.querySelector("h1").classList.remove("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(0)";
+            //         } else {
+            //             params.querySelector("h1").classList.add("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(-50px)";
+            //         }
+            //     });
+            // } else {
+            //     e.visibleSlides.forEach(function(params) {
+            //         params.querySelector("h1").style.transition = "1s";
+            //         if (params.classList.contains("swiper-slide-active")) {
+            //             params.querySelector("h1").classList.remove("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(0)";
+            //         } else {
+            //             params.querySelector("h1").classList.add("opacity-0");
+            //             params.querySelector("h1").style.transform = "translateY(-50px)";
+            //         }
+            //     });
+            // }
+        }
+    </script>
+    <!-- end-project-section -->
+
+    <!-- <div class="bg-mySecondary" id="biodata">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
                 fill="#ffffff"
@@ -135,91 +268,101 @@
             </svg>
         </div> -->
 
-        <div class="bg-mySecondary" id="pendidikan">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-                fill="#ffffff"
-                fill-opacity="1"
-                d="M0,160L0,256L36.9,256L36.9,32L73.8,32L73.8,288L110.8,288L110.8,288L147.7,288L147.7,128L184.6,128L184.6,256L221.5,256L221.5,128L258.5,128L258.5,0L295.4,0L295.4,0L332.3,0L332.3,192L369.2,192L369.2,160L406.2,160L406.2,96L443.1,96L443.1,96L480,96L480,64L516.9,64L516.9,32L553.8,32L553.8,160L590.8,160L590.8,0L627.7,0L627.7,128L664.6,128L664.6,288L701.5,288L701.5,288L738.5,288L738.5,256L775.4,256L775.4,128L812.3,128L812.3,224L849.2,224L849.2,256L886.2,256L886.2,0L923.1,0L923.1,96L960,96L960,96L996.9,96L996.9,192L1033.8,192L1033.8,64L1070.8,64L1070.8,64L1107.7,64L1107.7,224L1144.6,224L1144.6,288L1181.5,288L1181.5,192L1218.5,192L1218.5,192L1255.4,192L1255.4,256L1292.3,256L1292.3,256L1329.2,256L1329.2,256L1366.2,256L1366.2,256L1403.1,256L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"
-                ></path>
-            </svg>
-            <div class="text-shadow-light-md text-center fw-bold display-1 text-black">PENDIDIKAN</div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-3">
-                        <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <lottie-player class="bd-placeholder-img" src="./assets/img/sd.json" background="transparent" speed="1" style="width: 100%" loop autoplay></lottie-player>
-                                </div>
-                                <div class="carousel-item">
-                                    <lottie-player class="bd-placeholder-img" src="./assets/img/smp.json" background="transparent" speed="1" style="width: 100%" loop autoplay></lottie-player>
-                                </div>
-                                <div class="carousel-item">
-                                    <lottie-player class="bd-placeholder-img" src="./assets/img/smk.json" background="transparent" speed="1" style="width: 100%" loop autoplay></lottie-player>
-                                </div>
-                                <div class="carousel-item">
-                                    <lottie-player class="bd-placeholder-img" src="./assets/img/universitas.json" background="transparent" speed="1" style="width: 100%" loop autoplay></lottie-player>
-                                </div>
+    <div class="bg-mySecondary" id="pendidikan">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,160L0,256L36.9,256L36.9,32L73.8,32L73.8,288L110.8,288L110.8,288L147.7,288L147.7,128L184.6,128L184.6,256L221.5,256L221.5,128L258.5,128L258.5,0L295.4,0L295.4,0L332.3,0L332.3,192L369.2,192L369.2,160L406.2,160L406.2,96L443.1,96L443.1,96L480,96L480,64L516.9,64L516.9,32L553.8,32L553.8,160L590.8,160L590.8,0L627.7,0L627.7,128L664.6,128L664.6,288L701.5,288L701.5,288L738.5,288L738.5,256L775.4,256L775.4,128L812.3,128L812.3,224L849.2,224L849.2,256L886.2,256L886.2,0L923.1,0L923.1,96L960,96L960,96L996.9,96L996.9,192L1033.8,192L1033.8,64L1070.8,64L1070.8,64L1107.7,64L1107.7,224L1144.6,224L1144.6,288L1181.5,288L1181.5,192L1218.5,192L1218.5,192L1255.4,192L1255.4,256L1292.3,256L1292.3,256L1329.2,256L1329.2,256L1366.2,256L1366.2,256L1403.1,256L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z">
+            </path>
+        </svg>
+        <div class="text-shadow-light-md text-center fw-bold display-1 text-black">PENDIDIKAN</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <lottie-player class="bd-placeholder-img" src="./assets/img/sd.json"
+                                    background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                </lottie-player>
+                            </div>
+                            <div class="carousel-item">
+                                <lottie-player class="bd-placeholder-img" src="./assets/img/smp.json"
+                                    background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                </lottie-player>
+                            </div>
+                            <div class="carousel-item">
+                                <lottie-player class="bd-placeholder-img" src="./assets/img/smk.json"
+                                    background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                </lottie-player>
+                            </div>
+                            <div class="carousel-item">
+                                <lottie-player class="bd-placeholder-img" src="./assets/img/universitas.json"
+                                    background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                </lottie-player>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-9 align-self-center">
-                        <div class="row fs-4 text-border-light">
-                            <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Dasar Negeri Bojong Nangka 04</div>
-                            <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">1998 - 2004</div>
-                            <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Menengah Pertama Negeri 01 Citeureup</div>
-                            <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2004 - 2007</div>
-                            <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Menegah Kejuruan Negeri 01 Gunung Putri</div>
-                            <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2007 - 2010</div>
-                            <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Universitas Indraprasta PGRI</div>
-                            <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2016 - 2021</div>
+                </div>
+                <div class="col-12 col-md-9 align-self-center">
+                    <div class="row fs-4 text-border-light">
+                        <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Dasar Negeri Bojong
+                            Nangka 04</div>
+                        <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">1998 - 2004</div>
+                        <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Menengah Pertama
+                            Negeri 01 Citeureup</div>
+                        <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2004 - 2007</div>
+                        <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Sekolah Menegah Kejuruan
+                            Negeri 01 Gunung Putri</div>
+                        <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2007 - 2010</div>
+                        <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-0">Universitas Indraprasta PGRI
                         </div>
+                        <div class="col-12 text-center col-sm-3 text-sm-start mb-5 mb-sm-0">2016 - 2021</div>
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-                fill="#ffffff"
-                fill-opacity="1"
-                d="M0,96L0,288L36.9,288L36.9,32L73.8,32L73.8,288L110.8,288L110.8,224L147.7,224L147.7,288L184.6,288L184.6,256L221.5,256L221.5,128L258.5,128L258.5,288L295.4,288L295.4,0L332.3,0L332.3,320L369.2,320L369.2,128L406.2,128L406.2,32L443.1,32L443.1,96L480,96L480,160L516.9,160L516.9,128L553.8,128L553.8,288L590.8,288L590.8,160L627.7,160L627.7,96L664.6,96L664.6,32L701.5,32L701.5,256L738.5,256L738.5,160L775.4,160L775.4,256L812.3,256L812.3,288L849.2,288L849.2,96L886.2,96L886.2,256L923.1,256L923.1,32L960,32L960,320L996.9,320L996.9,32L1033.8,32L1033.8,192L1070.8,192L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,32L1181.5,32L1181.5,32L1218.5,32L1218.5,288L1255.4,288L1255.4,96L1292.3,96L1292.3,224L1329.2,224L1329.2,288L1366.2,288L1366.2,32L1403.1,32L1403.1,96L1440,96L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"
-                ></path>
-            </svg>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,96L0,288L36.9,288L36.9,32L73.8,32L73.8,288L110.8,288L110.8,224L147.7,224L147.7,288L184.6,288L184.6,256L221.5,256L221.5,128L258.5,128L258.5,288L295.4,288L295.4,0L332.3,0L332.3,320L369.2,320L369.2,128L406.2,128L406.2,32L443.1,32L443.1,96L480,96L480,160L516.9,160L516.9,128L553.8,128L553.8,288L590.8,288L590.8,160L627.7,160L627.7,96L664.6,96L664.6,32L701.5,32L701.5,256L738.5,256L738.5,160L775.4,160L775.4,256L812.3,256L812.3,288L849.2,288L849.2,96L886.2,96L886.2,256L923.1,256L923.1,32L960,32L960,320L996.9,320L996.9,32L1033.8,32L1033.8,192L1070.8,192L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,32L1181.5,32L1181.5,32L1218.5,32L1218.5,288L1255.4,288L1255.4,96L1292.3,96L1292.3,224L1329.2,224L1329.2,288L1366.2,288L1366.2,32L1403.1,32L1403.1,96L1440,96L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z">
+            </path>
+        </svg>
+    </div>
 
-        <div id="pengalaman">
-            <!--            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <div id="pengalaman">
+        <!--            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path
                             fill="#ffffff"
                             fill-opacity="1"
                             d="M0,160L0,256L36.9,256L36.9,32L73.8,32L73.8,288L110.8,288L110.8,288L147.7,288L147.7,128L184.6,128L184.6,256L221.5,256L221.5,128L258.5,128L258.5,0L295.4,0L295.4,0L332.3,0L332.3,192L369.2,192L369.2,160L406.2,160L406.2,96L443.1,96L443.1,96L480,96L480,64L516.9,64L516.9,32L553.8,32L553.8,160L590.8,160L590.8,0L627.7,0L627.7,128L664.6,128L664.6,288L701.5,288L701.5,288L738.5,288L738.5,256L775.4,256L775.4,128L812.3,128L812.3,224L849.2,224L849.2,256L886.2,256L886.2,0L923.1,0L923.1,96L960,96L960,96L996.9,96L996.9,192L1033.8,192L1033.8,64L1070.8,64L1070.8,64L1107.7,64L1107.7,224L1144.6,224L1144.6,288L1181.5,288L1181.5,192L1218.5,192L1218.5,192L1255.4,192L1255.4,256L1292.3,256L1292.3,256L1329.2,256L1329.2,256L1366.2,256L1366.2,256L1403.1,256L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"
                             ></path>
                         </svg>-->
-            <div class="text-shadow-light-md text-center fw-bold display-1 text-black">PENGALAMAN</div>
-            <div class="container">
-                <div class="row fs-4 text-border-light">
-                    <div class="col-12 text-center my-5 display-3">BEKERJA</div>
-                    <img src="./assets/img/sanyo.png" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
-                    <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">PT. SANYO Jaya Components Indonesia</div>
-                    <img src="./assets/img/megasari.jpg" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
-                    <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">PT. Megasari Makmur</div>
-                    <!--                    <div class="col-12 text-center my-5 display-3">MEMPELAJARI</div>
+        <div class="text-shadow-light-md text-center fw-bold display-1 text-black">PENGALAMAN</div>
+        <div class="container">
+            <div class="row fs-4 text-border-light">
+                <div class="col-12 text-center my-5 display-3">BEKERJA</div>
+                <img src="./assets/img/sanyo.png" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
+                <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">PT. SANYO Jaya
+                    Components Indonesia</div>
+                <img src="./assets/img/megasari.jpg" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
+                <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">PT. Megasari
+                    Makmur</div>
+                <!--                    <div class="col-12 text-center my-5 display-3">MEMPELAJARI</div>
                                         <img src="./assets/img/laravel-8.png" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
                                         <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">Pemula menggunakan framework Laravel versi 8</div>
                                         <img src="./assets/img/bootstrap-5.jpg" class="col-12 text-center col-sm-3 text-sm-start mb-sm-3" />
                                         <div class="col-12 text-center col-sm-9 text-sm-start mb-3 mb-sm-3 align-self-center">Pemula menggunakan framework Bootstrap versi 5</div>-->
-                </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <!--            <path
                             fill="#ffffff"
                             fill-opacity="1"
                             d="M0,96L0,288L36.9,288L36.9,32L73.8,32L73.8,288L110.8,288L110.8,224L147.7,224L147.7,288L184.6,288L184.6,256L221.5,256L221.5,128L258.5,128L258.5,288L295.4,288L295.4,0L332.3,0L332.3,320L369.2,320L369.2,128L406.2,128L406.2,32L443.1,32L443.1,96L480,96L480,160L516.9,160L516.9,128L553.8,128L553.8,288L590.8,288L590.8,160L627.7,160L627.7,96L664.6,96L664.6,32L701.5,32L701.5,256L738.5,256L738.5,160L775.4,160L775.4,256L812.3,256L812.3,288L849.2,288L849.2,96L886.2,96L886.2,256L923.1,256L923.1,32L960,32L960,320L996.9,320L996.9,32L1033.8,32L1033.8,192L1070.8,192L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,32L1181.5,32L1181.5,32L1218.5,32L1218.5,288L1255.4,288L1255.4,96L1292.3,96L1292.3,224L1329.2,224L1329.2,288L1366.2,288L1366.2,32L1403.1,32L1403.1,96L1440,96L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"
                             ></path>
                         </svg>-->
-        </div>
+    </div>
 
-        <!--        <div class="bg-mySecondary" id="hobby">
+    <!--        <div class="bg-mySecondary" id="hobby">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                         fill="#fff"
@@ -273,51 +416,55 @@
                     </svg>
                 </div>-->
 
-        <div class="bg-mySecondary" id="programming">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-                fill="#ffffff"
-                fill-opacity="1"
-                d="M0,224L0,192L36.9,192L36.9,32L73.8,32L73.8,64L110.8,64L110.8,64L147.7,64L147.7,288L184.6,288L184.6,64L221.5,64L221.5,224L258.5,224L258.5,32L295.4,32L295.4,128L332.3,128L332.3,192L369.2,192L369.2,288L406.2,288L406.2,128L443.1,128L443.1,128L480,128L480,256L516.9,256L516.9,192L553.8,192L553.8,128L590.8,128L590.8,96L627.7,96L627.7,224L664.6,224L664.6,64L701.5,64L701.5,288L738.5,288L738.5,256L775.4,256L775.4,192L812.3,192L812.3,32L849.2,32L849.2,192L886.2,192L886.2,128L923.1,128L923.1,96L960,96L960,32L996.9,32L996.9,192L1033.8,192L1033.8,256L1070.8,256L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,256L1181.5,256L1181.5,128L1218.5,128L1218.5,224L1255.4,224L1255.4,64L1292.3,64L1292.3,192L1329.2,192L1329.2,32L1366.2,32L1366.2,160L1403.1,160L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"
-                ></path>
-            </svg>
-            <div class="container mb-3 text-shadow-light-md text-center fw-bold display-1 text-black">SKILL</div>
-            <div class="container mb-sm-3 text-shadow-light-md text-center fw-bold display-5 text-black">Focus :</div>
+    <div class="bg-mySecondary" id="programming">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,224L0,192L36.9,192L36.9,32L73.8,32L73.8,64L110.8,64L110.8,64L147.7,64L147.7,288L184.6,288L184.6,64L221.5,64L221.5,224L258.5,224L258.5,32L295.4,32L295.4,128L332.3,128L332.3,192L369.2,192L369.2,288L406.2,288L406.2,128L443.1,128L443.1,128L480,128L480,256L516.9,256L516.9,192L553.8,192L553.8,128L590.8,128L590.8,96L627.7,96L627.7,224L664.6,224L664.6,64L701.5,64L701.5,288L738.5,288L738.5,256L775.4,256L775.4,192L812.3,192L812.3,32L849.2,32L849.2,192L886.2,192L886.2,128L923.1,128L923.1,96L960,96L960,32L996.9,32L996.9,192L1033.8,192L1033.8,256L1070.8,256L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,256L1181.5,256L1181.5,128L1218.5,128L1218.5,224L1255.4,224L1255.4,64L1292.3,64L1292.3,192L1329.2,192L1329.2,32L1366.2,32L1366.2,160L1403.1,160L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container mb-3 text-shadow-light-md text-center fw-bold display-1 text-black">SKILL</div>
+        <div class="container mb-sm-3 text-shadow-light-md text-center fw-bold display-5 text-black">Focus :</div>
 
-            <div id="pCarousel" class="carousel slide carousel-fade bg-mySecondary d-sm-none" data-bs-touch="false" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <!--                    <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="pCarousel" class="carousel slide carousel-fade bg-mySecondary d-sm-none" data-bs-touch="false"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <!--                    <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                         <button type="button" data-bs-target="#pCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>-->
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <lottie-player class="bd-placeholder-img" src="./assets/img/java.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                        autoplay></lottie-player>
+                                </div>
+                            </div>
+                            <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">JAVA</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <lottie-player class="bd-placeholder-img" src="./assets/img/java.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                                    </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <lottie-player class="bd-placeholder-img" src="./assets/img/mysql.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                        autoplay></lottie-player>
                                 </div>
-                                <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">JAVA</p>
                             </div>
+                            <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">MySQL</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <lottie-player class="bd-placeholder-img" src="./assets/img/mysql.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                                    </div>
-                                </div>
-                                <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <div class="carousel-item">
+                </div>
+                <!--                    <div class="carousel-item">
                                             <div class="container">
                                                 <div class="carousel-caption">
                                                     <div class="row justify-content-center">
@@ -365,35 +512,39 @@
                                                 </div>
                                             </div>
                                         </div>-->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#pCarousel" data-bs-slide="prev">
-                    <lottie-player class="image-shadow" src="./assets/img/5.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#pCarousel" data-bs-slide="next">
-                    <lottie-player class="image-shadow" src="./assets/img/6.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pCarousel" data-bs-slide="prev">
+                <lottie-player class="image-shadow" src="./assets/img/5.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%" loop autoplay></lottie-player>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pCarousel" data-bs-slide="next">
+                <lottie-player class="image-shadow" src="./assets/img/6.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%" loop autoplay></lottie-player>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-            <div class="d-none d-sm-flex row row-cols-1 row-cols-sm-3 row-cols-xl-5 px-5 justify-content-center">
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <lottie-player id="java" class="card-img-top" src="./assets/img/java.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
-                        <div class="card-body">
-                            <p class="card-title">JAVA</p>
-                        </div>
+        <div class="d-none d-sm-flex row row-cols-1 row-cols-sm-3 row-cols-xl-5 px-5 justify-content-center">
+            <div class="col mb-3">
+                <div class="card text-center">
+                    <lottie-player id="java" class="card-img-top" src="./assets/img/java.json" background="transparent"
+                        speed="1" style="height: 200px"></lottie-player>
+                    <div class="card-body">
+                        <p class="card-title">JAVA</p>
                     </div>
                 </div>
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <lottie-player id="mysql" class="card-img-top" src="./assets/img/mysql.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
-                        <div class="card-body">
-                            <p class="card-title">MySQL</p>
-                        </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card text-center">
+                    <lottie-player id="mysql" class="card-img-top" src="./assets/img/mysql.json"
+                        background="transparent" speed="1" style="height: 200px"></lottie-player>
+                    <div class="card-body">
+                        <p class="card-title">MySQL</p>
                     </div>
                 </div>
-                <!--                <div class="col mb-3">
+            </div>
+            <!--                <div class="col mb-3">
                                     <div class="card text-center">
                                         <lottie-player id="xml" class="card-img-top" src="./assets/img/xml.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
                                         <div class="card-body">
@@ -425,54 +576,63 @@
                                         </div>
                                     </div>
                                 </div>-->
+        </div>
+
+        <div class="container mb-sm-3 text-shadow-light-md text-center fw-bold display-5 text-black">Can But Not Pro :
+        </div>
+
+        <div id="pCarousel2" class="carousel slide carousel-fade bg-mySecondary d-sm-none" data-bs-touch="false"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
-            <div class="container mb-sm-3 text-shadow-light-md text-center fw-bold display-5 text-black">Can But Not Pro :</div>
-
-            <div id="pCarousel2" class="carousel slide carousel-fade bg-mySecondary d-sm-none" data-bs-touch="false" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#pCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <lottie-player class="bd-placeholder-img" src="./assets/img/html.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                        autoplay></lottie-player>
+                                </div>
+                            </div>
+                            <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">HTML</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <lottie-player class="bd-placeholder-img" src="./assets/img/html.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                                    </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <lottie-player class="bd-placeholder-img" src="./assets/img/js.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                        autoplay></lottie-player>
                                 </div>
-                                <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">HTML</p>
                             </div>
+                            <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">JAVASCRIPT</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <lottie-player class="bd-placeholder-img" src="./assets/img/js.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <lottie-player class="bd-placeholder-img" src="./assets/img/php.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                        autoplay></lottie-player>
                                 </div>
-                                <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">JAVASCRIPT</p>
                             </div>
+                            <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">PHP</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <lottie-player class="bd-placeholder-img" src="./assets/img/php.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                                    </div>
-                                </div>
-                                <p class="fs-1 text-border-light text-black bg-black-tranparent rounded-3">PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <div class="carousel-item active">
+                </div>
+                <!--                    <div class="carousel-item active">
                                             <div class="container">
                                                 <div class="carousel-caption">
                                                     <div class="row justify-content-center">
@@ -508,43 +668,48 @@
                                                 </div>
                                             </div>
                                         </div>-->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#pCarousel2" data-bs-slide="prev">
-                    <lottie-player class="image-shadow" src="./assets/img/5.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#pCarousel2" data-bs-slide="next">
-                    <lottie-player class="image-shadow" src="./assets/img/6.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pCarousel2" data-bs-slide="prev">
+                <lottie-player class="image-shadow" src="./assets/img/5.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%" loop autoplay></lottie-player>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pCarousel2" data-bs-slide="next">
+                <lottie-player class="image-shadow" src="./assets/img/6.json" background="transparent" speed="1"
+                    style="width: 100%; height: 100%" loop autoplay></lottie-player>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-            <div class="d-none d-sm-flex row row-cols-1 row-cols-sm-3 row-cols-xl-5 px-5 justify-content-center">
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <lottie-player id="html" class="card-img-top" src="./assets/img/html.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
-                        <div class="card-body">
-                            <p class="card-title">HTML</p>
-                        </div>
+        <div class="d-none d-sm-flex row row-cols-1 row-cols-sm-3 row-cols-xl-5 px-5 justify-content-center">
+            <div class="col mb-3">
+                <div class="card text-center">
+                    <lottie-player id="html" class="card-img-top" src="./assets/img/html.json" background="transparent"
+                        speed="1" style="height: 200px"></lottie-player>
+                    <div class="card-body">
+                        <p class="card-title">HTML</p>
                     </div>
                 </div>
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <lottie-player id="js" class="card-img-top" src="./assets/img/js.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
-                        <div class="card-body">
-                            <p class="card-title">JAVASCRIPT</p>
-                        </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card text-center">
+                    <lottie-player id="js" class="card-img-top" src="./assets/img/js.json" background="transparent"
+                        speed="1" style="height: 200px"></lottie-player>
+                    <div class="card-body">
+                        <p class="card-title">JAVASCRIPT</p>
                     </div>
                 </div>
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <lottie-player id="php" class="card-img-top" src="./assets/img/php.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
-                        <div class="card-body">
-                            <p class="card-title">PHP</p>
-                        </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card text-center">
+                    <lottie-player id="php" class="card-img-top" src="./assets/img/php.json" background="transparent"
+                        speed="1" style="height: 200px"></lottie-player>
+                    <div class="card-body">
+                        <p class="card-title">PHP</p>
                     </div>
                 </div>
-                <!--                <div class="col mb-3">
+            </div>
+            <!--                <div class="col mb-3">
                                     <div class="card text-center">
                                         <lottie-player id="netbeans" class="card-img-top" src="./assets/img/netbeans.json" background="transparent" speed="1" style="height: 200px"></lottie-player>
                                         <div class="card-body">
@@ -568,136 +733,134 @@
                                         </div>
                                     </div>
                                 </div>-->
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-                fill="#ffffff"
-                fill-opacity="1"
-                d="M0,64L0,256L36.9,256L36.9,128L73.8,128L73.8,160L110.8,160L110.8,32L147.7,32L147.7,256L184.6,256L184.6,64L221.5,64L221.5,64L258.5,64L258.5,256L295.4,256L295.4,192L332.3,192L332.3,32L369.2,32L369.2,192L406.2,192L406.2,160L443.1,160L443.1,320L480,320L480,192L516.9,192L516.9,288L553.8,288L553.8,32L590.8,32L590.8,224L627.7,224L627.7,64L664.6,64L664.6,288L701.5,288L701.5,96L738.5,96L738.5,256L775.4,256L775.4,32L812.3,32L812.3,64L849.2,64L849.2,128L886.2,128L886.2,0L923.1,0L923.1,32L960,32L960,128L996.9,128L996.9,96L1033.8,96L1033.8,192L1070.8,192L1070.8,160L1107.7,160L1107.7,32L1144.6,32L1144.6,96L1181.5,96L1181.5,288L1218.5,288L1218.5,96L1255.4,96L1255.4,224L1292.3,224L1292.3,256L1329.2,256L1329.2,192L1366.2,192L1366.2,32L1403.1,32L1403.1,128L1440,128L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"
-                ></path>
-            </svg>
         </div>
 
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/lottie-player.js"></script>
-        <script src="./assets/js/lottie-interactivity.min.js"></script>
-        <script>
-            LottieInteractivity.create({
-                mode: "scroll",
-                player: "#java",
-                actions: [
-                    {
-                        visibility: [0, 0.2],
-                        type: "stop",
-                        frames: [0],
-                    },
-                    {
-                        visibility: [0.2, 0.4],
-                        type: "seek",
-                        frames: [6, 95],
-                    },
-                    {
-                        visibility: [0.4, 0.6],
-                        type: "stop",
-                        frames: [95],
-                    },
-                    {
-                        visibility: [0.6, 0.8],
-                        type: "seek",
-                        frames: [95, 6],
-                    },
-                ],
-            });
-            LottieInteractivity.create({
-                mode: "scroll",
-                player: "#html",
-                actions: [
-                    {
-                        visibility: [0, 0.2],
-                        type: "stop",
-                        frames: [0],
-                    },
-                    {
-                        visibility: [0.2, 0.4],
-                        type: "seek",
-                        frames: [11, 76],
-                    },
-                    {
-                        visibility: [0.4, 0.6],
-                        type: "stop",
-                        frames: [76],
-                    },
-                    {
-                        visibility: [0.6, 0.8],
-                        type: "seek",
-                        frames: [76, 11],
-                    },
-                ],
-            });
-            LottieInteractivity.create({
-                mode: "scroll",
-                player: "#js",
-                actions: [
-                    {
-                        visibility: [0, 0.2],
-                        type: "stop",
-                        frames: [0],
-                    },
-                    {
-                        visibility: [0.2, 0.4],
-                        type: "seek",
-                        frames: [0, 33],
-                    },
-                    {
-                        visibility: [0.4, 0.6],
-                        type: "stop",
-                        frames: [33],
-                    },
-                    {
-                        visibility: [0.6, 0.8],
-                        type: "seek",
-                        frames: [33, 0],
-                    },
-                ],
-            });
-            LottieInteractivity.create({
-                mode: "scroll",
-                player: "#php",
-                actions: [
-                    {
-                        visibility: [0, 0.2],
-                        type: "stop",
-                        frames: [80],
-                    },
-                    {
-                        visibility: [0.2, 0.4],
-                        type: "seek",
-                        frames: [0, 65],
-                    },
-                    {
-                        visibility: [0.4, 0.6],
-                        type: "stop",
-                        frames: [65],
-                    },
-                    {
-                        visibility: [0.6, 0.8],
-                        type: "seek",
-                        frames: [65, 0],
-                    },
-                ],
-            });
-            LottieInteractivity.create({
-                mode: "scroll",
-                player: "#mysql",
-                actions: [
-                    {
-                        visibility: [0.2, 0.8],
-                        type: "seek",
-                        frames: [0, 180],
-                    }
-                ],
-            });
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,64L0,256L36.9,256L36.9,128L73.8,128L73.8,160L110.8,160L110.8,32L147.7,32L147.7,256L184.6,256L184.6,64L221.5,64L221.5,64L258.5,64L258.5,256L295.4,256L295.4,192L332.3,192L332.3,32L369.2,32L369.2,192L406.2,192L406.2,160L443.1,160L443.1,320L480,320L480,192L516.9,192L516.9,288L553.8,288L553.8,32L590.8,32L590.8,224L627.7,224L627.7,64L664.6,64L664.6,288L701.5,288L701.5,96L738.5,96L738.5,256L775.4,256L775.4,32L812.3,32L812.3,64L849.2,64L849.2,128L886.2,128L886.2,0L923.1,0L923.1,32L960,32L960,128L996.9,128L996.9,96L1033.8,96L1033.8,192L1070.8,192L1070.8,160L1107.7,160L1107.7,32L1144.6,32L1144.6,96L1181.5,96L1181.5,288L1218.5,288L1218.5,96L1255.4,96L1255.4,224L1292.3,224L1292.3,256L1329.2,256L1329.2,192L1366.2,192L1366.2,32L1403.1,32L1403.1,128L1440,128L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/lottie-player.js"></script>
+    <script src="./assets/js/lottie-interactivity.min.js"></script>
+    <script>
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#java",
+            actions: [
+                {
+                    visibility: [0, 0.2],
+                    type: "stop",
+                    frames: [0],
+                },
+                {
+                    visibility: [0.2, 0.4],
+                    type: "seek",
+                    frames: [6, 95],
+                },
+                {
+                    visibility: [0.4, 0.6],
+                    type: "stop",
+                    frames: [95],
+                },
+                {
+                    visibility: [0.6, 0.8],
+                    type: "seek",
+                    frames: [95, 6],
+                },
+            ],
+        });
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#html",
+            actions: [
+                {
+                    visibility: [0, 0.2],
+                    type: "stop",
+                    frames: [0],
+                },
+                {
+                    visibility: [0.2, 0.4],
+                    type: "seek",
+                    frames: [11, 76],
+                },
+                {
+                    visibility: [0.4, 0.6],
+                    type: "stop",
+                    frames: [76],
+                },
+                {
+                    visibility: [0.6, 0.8],
+                    type: "seek",
+                    frames: [76, 11],
+                },
+            ],
+        });
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#js",
+            actions: [
+                {
+                    visibility: [0, 0.2],
+                    type: "stop",
+                    frames: [0],
+                },
+                {
+                    visibility: [0.2, 0.4],
+                    type: "seek",
+                    frames: [0, 33],
+                },
+                {
+                    visibility: [0.4, 0.6],
+                    type: "stop",
+                    frames: [33],
+                },
+                {
+                    visibility: [0.6, 0.8],
+                    type: "seek",
+                    frames: [33, 0],
+                },
+            ],
+        });
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#php",
+            actions: [
+                {
+                    visibility: [0, 0.2],
+                    type: "stop",
+                    frames: [80],
+                },
+                {
+                    visibility: [0.2, 0.4],
+                    type: "seek",
+                    frames: [0, 65],
+                },
+                {
+                    visibility: [0.4, 0.6],
+                    type: "stop",
+                    frames: [65],
+                },
+                {
+                    visibility: [0.6, 0.8],
+                    type: "seek",
+                    frames: [65, 0],
+                },
+            ],
+        });
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#mysql",
+            actions: [
+                {
+                    visibility: [0.2, 0.8],
+                    type: "seek",
+                    frames: [0, 180],
+                }
+            ],
+        });
 //            LottieInteractivity.create({
 //                mode: "scroll",
 //                player: "#xml",
@@ -785,6 +948,7 @@
             // var x = window.matchMedia("(max-width: 700px)");
             // myFunction(x); // Call listener function at run time
             // x.addListener(myFunction); // Attach listener function on state changes
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
