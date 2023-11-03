@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Aplikasi Penjualan Toko Nona Seblak",
+        "link": "https://github.com/dhondoi/Java-Android-Aplikasi-Penjualan-Produk-Toko-Nona-Seblak",
+        "image": "nona-seblak",
+        "category": "Android"
+    },
+    {
+        "title": "Aplikasi Penggajian Karyawan",
+        "link": "https://github.com/dhondoi/Java-Desktop-Aplikasi-Penggajian-Karyawan",
+        "image": "gaji-karyawan",
+        "category": "Desktop"
+    }
+]
