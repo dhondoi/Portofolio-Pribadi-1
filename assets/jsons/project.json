@@ -11,4 +11,11 @@
         "image": "gaji-karyawan",
         "category": "Desktop"
     }
+    },
+    {
+        "title": "Aplikasi Keuangan Sederhana",
+        "link": "https://github.com/dhondoi/Java-Desktop-Aplikasi-Keuangan-Sederhana",
+        "image": "keuangan",
+        "category": "Desktop"
+    }
 ]
