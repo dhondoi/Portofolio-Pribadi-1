@@ -56,33 +56,47 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 
 // custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+let filterItems;
+function addEventListenerAllProjectCategories() {
+  const select = document.querySelector("[data-select]");
+  const selectValue = document.querySelector("[data-selecct-value]");
+  select.addEventListener("click", function () { elementToggleFunc(this); });
+  // add event in all filter button items for small screen
+  const selectItems = document.querySelectorAll("[data-select-item]");
+  for (let i = 0; i < selectItems.length; i++) {
+    selectItems[i].addEventListener("click", function () {
+      let selectedValue = this.innerText;
+      selectValue.innerText = this.innerText;
+      elementToggleFunc(select);
+      filterFunc(selectedValue);
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+    });
+  }
+  // add event in all filter button items for large screen
+  const filterBtn = document.querySelectorAll("[data-filter-btn]");
+  let lastClickedBtn = filterBtn[0];
+  for (let i = 0; i < filterBtn.length; i++) {
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+    filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+      let selectedValue = this.innerText;
+      selectValue.innerText = this.innerText;
+      filterFunc(selectedValue);
 
-  });
+      lastClickedBtn.classList.remove("active");
+      this.classList.add("active");
+      lastClickedBtn = this;
+
+    });
+  }
+  filterItems = document.querySelectorAll("[data-filter-item]")
 }
-
 // filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
 const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
+    if (selectedValue === "All") {
       filterItems[i].classList.add("active");
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
@@ -94,24 +108,7 @@ const filterFunc = function (selectedValue) {
 
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
 
 
 

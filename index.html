@@ -732,6 +732,44 @@
               <button class="active" data-filter-btn>All</button>
             </li>
 
+            <script>
+              let projectCategories = new Array;
+              function addProjectCategory(name) {
+                if (projectCategories.length === 0) {
+                  projectCategories.push(name);
+                } else {
+                  if (!categoryIsAvailable(name)) {
+                    projectCategories.push(name);
+                  }
+                }
+              }
+
+              function categoryIsAvailable(name) {
+                let available = false;
+                for (let i = 0; i < projectCategories.length; i++) {
+                  if (projectCategories[i] == name) {
+                    available = true;
+                  }
+                }
+                return available;
+              }
+
+              function generateListProjectList() {
+                let projectListLg = document.querySelector("body > main > div > article.portfolio > section > ul.filter-list");
+                let projectListSm = document.querySelector("body > main > div > article.portfolio > section > div > ul");
+                for (let i = 0; i < projectCategories.length; i++) {
+                  projectListLg.innerHTML +=
+                    `<li class="filter-item">
+                      <button data-filter-btn>${projectCategories[i]}</button>
+                    </li>`;
+                  projectListSm.innerHTML +=
+                    `<li class="select-item">
+                      <button data-select-item>${projectCategories[i]}</button>
+                    </li>`;
+                }
+                addEventListenerAllProjectCategories();
+              }
+            </script>
             <!-- <li class="filter-item">
               <button data-filter-btn>Android</button>
             </li>
@@ -811,7 +849,9 @@
                         <p class="project-category">${element.category}</p>
                       </a>
                     </li>`;
+                  addProjectCategory(element.category);
                 });
+                generateListProjectList();
               }
               getProjectData();
             </script>
