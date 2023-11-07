@@ -896,6 +896,44 @@
 
           <ul class="blog-posts-list">
 
+            <script>
+              function getBlogData() {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                  if (xhr.readyState == 4 && xhr.status == 200) {
+                    let data = JSON.parse(this.responseText);
+                    viewBlog(data);
+                  }
+                }
+                xhr.open('GET', './assets/jsons/blog.json', true);
+                xhr.send();
+              }
+
+              function viewBlog(data) {
+                let ulBlog = document.querySelector("body > main > div > article.blog > section > ul");
+                data.forEach(element => {
+                  ulBlog.innerHTML +=
+                    `<li class="blog-post-item">
+                      <a href="${element.link}">
+                        <figure class="blog-banner-box">
+                          <img src="./assets/images/blogs/${element.image}.jpg" alt="${element.title}" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                          <div class="blog-meta">
+                            <p class="blog-category">${element.category}</p>
+                            <span class="dot"></span>
+                            <time datetime="${element.date}">${element.date_show}</time>
+                          </div>
+                          <h3 class="h3 blog-item-title">${element.title}</h3>
+                          <p class="blog-text">${element.description}</p>
+                        </div>
+                      </a>
+                   </li>`;
+                });
+              }
+              getBlogData();
+            </script>
+
             <!-- <li class="blog-post-item">
               <a href="#">
 
@@ -924,33 +962,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
+             -->
           </ul>
 
         </section>
