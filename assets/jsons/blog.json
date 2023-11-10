@@ -1,20 +1,11 @@
 [
     {
-        "title": "Kriptografi Monoalphabet",
-        "link": "https://github.com/dhondoi/Java-Prototipe-Kriptografi/blob/main/src/monoalphabet/README.md",
-        "image": "kriptografi-monoalphabet",
+        "title": "Java Library Prototipe Kriptografi",
+        "link": "https://github.com/dhondoi/Java-Library-Prototipe-Kriptografi",
+        "image": "kriptografi",
         "category": "Security",
-        "date": "2023-11-07",
-        "date_show": "07 November 2023",
-        "description": "Kriptografi monoalphabetic adalah algoritma kriptografi dengan teknik substitusi yaitu mengganti setiap karakter dari plainteks dengan satu karakter chiperteks. Teknik kriptografi ini membutuhkan jumlah pergeseran."
-    },
-    {
-        "title": "Kriptografi Polyalphabet",
-        "link": "https://github.com/dhondoi/Java-Prototipe-Kriptografi/blob/main/src/polyalphabet/README.md",
-        "image": "kriptografi-polyalphabet",
-        "category": "Security",
-        "date": "2023-11-08",
-        "date_show": "08 November 2023",
-        "description": "Kriptografi polyalphabet merupakan improvisasi dari teknik monoalphabet."
+        "date": "2023-11-11",
+        "date_show": "11 November 2023",
+        "description": "Kriptografi bisa pula diartikan sebagai suatu ilmu atau seni menjaga keamanan pesan."
     }
 ]
